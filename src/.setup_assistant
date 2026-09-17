@@ -1,0 +1,27 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: so101_moveit_gazebo
+    relative_path: urdf/so101.urdf.xacro
+  srdf:
+    relative_path: config/so101.srdf
+  package_settings:
+    author_name: bibimachine
+    author_email: bibimachine@github.com
+    generated_timestamp: 1789575477
+  control_xacro:
+    command:
+      - position
+      - effort
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+      - effort
+    state:
+      - position
+      - velocity
