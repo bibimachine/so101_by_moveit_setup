@@ -5,6 +5,9 @@
     <!-- Import so101 urdf file -->
     <xacro:include filename="$(find so101_moveit_setup)/urdf/so101_description.xacro" />
 
+    <!-- Robot body (links and joints) -->
+    <xacro:so101_description/>
+
     <!-- Import control_xacro -->
     <xacro:include filename="so101.ros2_control.xacro" />
 
