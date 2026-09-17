@@ -25,7 +25,7 @@ source install/setup.bash
 启动 MoveIt demo(mock 硬件 + RViz):
 
 ```bash
-ros2 launch src demo.launch.py
+ros2 launch so101_moveit_setup demo.launch.py
 ```
 
 启动后可拖动夹爪目标姿态,在 RViz 中规划并执行;假硬件会把命令回显为关节状态。
